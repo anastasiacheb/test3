@@ -1,0 +1,18 @@
+@use 'abstracts' as *;
+@use 'base';
+@use 'components';
+@use 'layout';
+
+.elem_mobile {
+    @include tablet {
+        display: none;
+    }
+}
+
+.elem_desktop {
+    display: none;
+
+    @include tablet {
+        display: inline-flex;
+    }
+}
