@@ -60,27 +60,32 @@
             <p>Назад</p>
           </a>
           <div class="card-person__image change__img">
-            <div class="change__load change__upload">
+            <label class="change__load change__upload" id="drop_zone" ondrop="dropHandler(ev);" ondragover="dragOverHandler(ev);">
+              <input type="file" id="image" name="image" accept="image/png, image/jpeg" class="file">
               <button>
                 <img src="public/icons/upload-03.svg" alt="icon" class="icon_size-m">
               </button>
               <p>Перетащите фото или</p>
               <p>нажмите, чтобы выбрать</p>
               <p>Не более 10 Мб</p>
-            </div>
+            </label>
             <div class="change__images">
-              <div class="change__load">
+              <label for="image1" class="change__load">
+                <input type="file" id="image1" name="image1" accept="image/png, image/jpeg" class="file">
                 <img src="public/icons/plus-01.svg" alt="icon" class="icon_size-l">
-              </div>
-              <div class="change__load">
+              </label>
+              <label for="image2" class="change__load">
+                <input type="file" id="image2" name="image2" accept="image/png, image/jpeg" class="file">
                 <img src="public/icons/plus-01.svg" alt="icon" class="icon_size-l">
-              </div>
-              <div class="change__load">
+              </label>
+              <label for="image3" class="change__load">
+                <input type="file" id="image3" name="image3" accept="image/png, image/jpeg" class="file">
                 <img src="public/icons/plus-01.svg" alt="icon" class="icon_size-l">
-              </div>
-              <div class="change__load">
+              </label>
+              <label for="image4" class="change__load">
+                <input type="file" id="image4" name="image4" accept="image/png, image/jpeg" class="file">
                 <img src="public/icons/plus-01.svg" alt="icon" class="icon_size-l">
-              </div>
+              </label>
             </div>
           </div>
           <div class="card-person__buttons elem_desktop">

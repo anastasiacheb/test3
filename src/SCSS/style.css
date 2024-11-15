@@ -3,6 +3,7 @@ html {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   background-color: #FBFAF9;
+  touch-action: pan-x pan-y;
 }
 
 ::-moz-placeholder {
@@ -32,6 +33,7 @@ body {
   transition: 0.3s all;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  touch-action: pan-x pan-y;
 }
 
 img {
@@ -448,6 +450,12 @@ input[type=range]::-moz-range-thumb {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+}
+
+.file {
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 .card {
@@ -928,6 +936,7 @@ input[type=range]::-moz-range-thumb {
   height: 100vh;
   overflow: scroll;
   padding-bottom: 5rem;
+  z-index: 1000;
 }
 @media screen and (min-width: 768px) {
   .filter {
@@ -1014,6 +1023,7 @@ input[type=range]::-moz-range-thumb {
   display: flex;
   gap: 1.2rem;
   margin-top: 3.2rem;
+  width: 100%;
 }
 .filter__mob {
   position: fixed;
@@ -1021,15 +1031,20 @@ input[type=range]::-moz-range-thumb {
   width: calc(100vw - 32px);
 }
 .filter__btn {
-  margin: 1.6rem;
+  padding: 1.6rem;
   display: flex;
+  width: 100%;
 }
 .filter__close {
   display: flex;
   gap: 0.8rem;
   position: absolute;
-  top: -4.2rem;
+  top: 2rem;
   background-color: #FBFAF9;
+  z-index: 1000;
+}
+.filter__close.invisible {
+  transform: translateX(-200%);
 }
 
 .section-info {

@@ -284,3 +284,9 @@ input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
 }
+
+.file {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
