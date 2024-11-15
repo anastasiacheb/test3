@@ -30,7 +30,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.3s all;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   touch-action: pan-x pan-y;
@@ -453,6 +452,12 @@ input[type=range]::-moz-range-thumb {
 }
 
 .file {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+::-webkit-file-upload-button {
   width: 0;
   height: 0;
   opacity: 0;
