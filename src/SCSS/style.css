@@ -940,8 +940,9 @@ input[type=range]::-moz-range-thumb {
   background-color: #FBFAF9;
   height: 100vh;
   overflow: scroll;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
   z-index: 1000;
+  transition: 0.3s all;
 }
 @media screen and (min-width: 768px) {
   .filter {
@@ -1227,6 +1228,7 @@ input[type=range]::-moz-range-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 7.6rem;
 }
 .change__upload {
   height: 24rem;

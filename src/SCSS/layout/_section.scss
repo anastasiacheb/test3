@@ -157,8 +157,9 @@
     background-color: $background;
     height: 100vh;
     overflow: scroll;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
     z-index: 1000;
+    transition: $transition;
 
     @include tablet {
         position: sticky;
@@ -486,6 +487,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 7.6rem;
     }
 
     &__upload {
