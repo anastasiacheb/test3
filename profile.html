@@ -7,6 +7,7 @@
     <title>Match</title>
     <link rel="stylesheet" href="src/SCSS/style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
@@ -59,9 +60,18 @@
             <img src="public/icons/Frame174.svg" alt="back" class="icon_size-xxs">
             <p>Назад</p>
           </a>
-          <div class="card-person__image">
+          <a data-fancybox="gallery" data-src="public/images/Image(1).webp" class="card-person__image">
             <img src="public/images/Image(1).webp" alt="person">
-          </div>
+          </a>
+          <a data-fancybox="gallery" data-src="public/images/Image(2).webp" class="card-person__image elem_invisible">
+            <img src="public/images/Image(2).webp" alt="person">
+          </a>
+          <a data-fancybox="gallery" data-src="public/images/Image(5).webp" class="card-person__image elem_invisible">
+            <img src="public/images/Image(5).webp" alt="person">
+          </a>
+          <a data-fancybox="gallery" data-src="public/images/Image(6).webp" class="card-person__image elem_invisible">
+            <img src="public/images/Image(6).webp" alt="person">
+          </a>
           <div class="card-person__content">
             <div class="card-person__title">
               <h2>Анфиса, 24</h2>
@@ -170,6 +180,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script type="module" src="src/js/main.js"></script>
   </body>
 </html>

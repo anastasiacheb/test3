@@ -1006,7 +1006,7 @@ input[type=range]::-moz-range-thumb {
   background-color: #FFFFFF;
   border: 1px solid #F0F0F0;
   border-radius: 1.3rem;
-  margin-bottom: 20rem;
+  margin-bottom: 12rem;
 }
 .filter__content > div:first-child {
   padding: 1.4rem 1.6rem 0 1.6rem;
@@ -1240,7 +1240,6 @@ input[type=range]::-moz-range-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 7.6rem;
 }
 .change__upload {
   height: 24rem;
@@ -1370,4 +1369,8 @@ input[type=range]::-moz-range-thumb {
   .elem_desktop {
     display: inline-flex;
   }
+}
+
+.elem_invisible {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

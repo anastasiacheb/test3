@@ -1,5 +1,9 @@
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
 
-
+const inputElement = document.querySelector('#image');
+const pond = FilePond.create(inputElement);
 /*двойные слайдеры*/
 
 let sliders = document.querySelectorAll(".slider");
