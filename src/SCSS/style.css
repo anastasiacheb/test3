@@ -949,7 +949,7 @@ input[type=range]::-moz-range-thumb {
   padding: 0 1.6rem;
   z-index: 1000;
   background-color: #FBFAF9;
-  height: 100svh;
+  height: 100dvh;
   overflow: scroll;
   z-index: 1000;
   transition: 0.3s all;
@@ -1380,4 +1380,9 @@ input[type=range]::-moz-range-thumb {
 
 .elem_invisible {
   display: none;
+}
+
+.body_noscroll {
+  overflow: hidden;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
