@@ -123,9 +123,9 @@ closeBtn.addEventListener("click", () => {
     closeBtn.classList.add("invisible");
 })
 
-filterBtn.addEventListener("click", disableScroll);
-backBtn.addEventListener("click", enableScroll);
-closeBtn.addEventListener("click", enableScroll);
+//filterBtn.addEventListener("click", disableScroll);
+//backBtn.addEventListener("click", enableScroll);
+//closeBtn.addEventListener("click", enableScroll);
 
 /*слайдер*/
 
