@@ -150,6 +150,7 @@ input[type="range"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: $transition;
 
     &__input {
         width: 0rem;
@@ -158,6 +159,7 @@ input[type="range"] {
 
         &:checked + .toggle__button {
             background-color: $black;
+            transition: $transition;
 
             &::after {
                 box-shadow: none;
@@ -176,6 +178,7 @@ input[type="range"] {
         background-color: $lightgray;
         border-radius: 2.5rem;
         position: relative;
+        transition: $transition;
 
         @include tablet {
             width: 4.2rem;

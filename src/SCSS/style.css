@@ -3,7 +3,7 @@ html {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   background-color: #FBFAF9;
-  touch-action: pan-x pan-y;
+  touch-action: manipulation;
 }
 
 ::-moz-placeholder {
@@ -23,7 +23,7 @@ html {
 body {
   position: relative;
   min-height: 100vh;
-  touch-action: pan-x pan-y;
+  touch-action: manipulation;
 }
 
 * {
@@ -32,7 +32,7 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  touch-action: pan-x pan-y;
+  touch-action: manipulation;
 }
 
 img {
@@ -328,6 +328,7 @@ input[type=range]::-moz-range-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s all;
 }
 .toggle__input {
   width: 0rem;
@@ -336,6 +337,7 @@ input[type=range]::-moz-range-thumb {
 }
 .toggle__input:checked + .toggle__button {
   background-color: #000000;
+  transition: 0.3s all;
 }
 .toggle__input:checked + .toggle__button::after {
   box-shadow: none;
@@ -352,6 +354,7 @@ input[type=range]::-moz-range-thumb {
   background-color: #F0F0F0;
   border-radius: 2.5rem;
   position: relative;
+  transition: 0.3s all;
 }
 @media screen and (min-width: 768px) {
   .toggle__button {
@@ -744,6 +747,7 @@ input[type=range]::-moz-range-thumb {
   gap: 2.4rem;
   font-size: 2.1rem;
   line-height: 2.2rem;
+  transition: 0.3s all;
 }
 .nav__menu li a {
   font-weight: 700;
@@ -782,6 +786,9 @@ input[type=range]::-moz-range-thumb {
 .nav__profile:nth-child(2) {
   flex-direction: row-reverse;
 }
+.nav__burger {
+  transition: 0.3s all;
+}
 
 .side {
   transform: translateX(80vw);
@@ -802,6 +809,7 @@ input[type=range]::-moz-range-thumb {
 .section {
   padding: 0 1.6rem;
   width: 100%;
+  transition: 0.3s all;
 }
 @media screen and (min-width: 768px) {
   .section {
@@ -819,6 +827,9 @@ input[type=range]::-moz-range-thumb {
   }
 }
 
+.cont {
+  transition: 0.3s all;
+}
 @media screen and (min-width: 768px) {
   .cont {
     display: flex;
@@ -939,7 +950,7 @@ input[type=range]::-moz-range-thumb {
   z-index: 1000;
   background-color: #FBFAF9;
   height: 100vh;
-  overflow: scroll;
+  overflow-x: scroll;
   padding-bottom: 10rem;
   z-index: 1000;
   transition: 0.3s all;
@@ -1048,6 +1059,7 @@ input[type=range]::-moz-range-thumb {
   top: 2rem;
   background-color: #FBFAF9;
   z-index: 1000;
+  transition: 0.3s all;
 }
 .filter__close.invisible {
   transform: translateX(-200%);
@@ -1207,6 +1219,7 @@ input[type=range]::-moz-range-thumb {
 .change__close {
   left: -0.1rem;
   top: -3.8rem;
+  transition: 0.3s all;
 }
 .change__images {
   display: grid;
