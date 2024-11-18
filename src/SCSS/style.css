@@ -1384,5 +1384,5 @@ input[type=range]::-moz-range-thumb {
 
 .body_noscroll {
   overflow: hidden;
-  height: 100%;
+  height: 100lvh;
 }/*# sourceMappingURL=style.css.map */
