@@ -492,7 +492,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        //max-width: 7.6rem;
+        max-width: calc((100vw - 1.6rem*2 -1.6rem*2 - 1rem*3)/4);
+
+        @include tablet {
+            max-width: 7rem;
+        }
     }
 
     &__upload {
