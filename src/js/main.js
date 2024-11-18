@@ -1,9 +1,4 @@
-Fancybox.bind("[data-fancybox]", {
-    // Your custom options
-  });
 
-const inputElement = document.querySelector('#image');
-const pond = FilePond.create(inputElement);
 /*двойные слайдеры*/
 
 let sliders = document.querySelectorAll(".slider");
@@ -104,6 +99,8 @@ burgerBtn.addEventListener("click", () => {
     }
 })
 
+
+
 /*фильтр*/
 
 
@@ -130,6 +127,8 @@ closeBtn.addEventListener("click", () => {
 filterBtn.addEventListener("click", disableScroll);
 backBtn.addEventListener("click", enableScroll);
 closeBtn.addEventListener("click", enableScroll);
+
+
 
 /*слайдер*/
 
