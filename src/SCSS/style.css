@@ -949,7 +949,7 @@ input[type=range]::-moz-range-thumb {
   padding: 0 1.6rem;
   z-index: 1000;
   background-color: #FBFAF9;
-  height: 110vh;
+  height: 120vh;
   overflow: scroll;
   padding-bottom: 10rem;
   z-index: 1000;
